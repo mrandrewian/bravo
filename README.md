@@ -23,6 +23,8 @@ Verify that all of the files listed are files that you modified and would like t
 `git push`
 Congratulations!  Your update is on github!
 
+[Example Terminal Output](http://imgur.com/CYClTN3)
+
 ----------
 ####If you find yourself in times of trouble
 If you need to revert a specific file to the version that is currently on github (abandoning "local" changes) you can use `git checkout file.foo`
