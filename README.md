@@ -1,5 +1,5 @@
 #bravo
-<sup>2 Bros + 1 Strava Api = Bravo</sup>
+2 Bros + 1 Strava Api = Bravo
 
 ##VERY IMPORTANT NOTE ABOUT USING GITHUB!!!
 **This is a public repository.**  That doesn't mean than anyone can edit the files. but it does mean that anyone can SEE the files.  There are bots crawling github constantly that are created to catch people that inadvertently post private information.  This can be anything from addresses and credit card numbers to private API keys.  This isn't meant to scare you, just to make you aware.  There are plenty of good ways to use sensitive information within public repositories if you are careful and deliberate.
@@ -14,13 +14,19 @@ There are a few steps involved with wetting up github access on your machine.  F
 
 ## Git basics
 Before you start working (this part is important!)
-`git pull`
+```
+git pull
+```
 After you have made a change that you want to publish to github
-`git status` 
+```
+git status
+```
 Verify that all of the files listed are files that you modified and would like to publish
-`git add -A`
-`git commit -m "message describing the change you made here"`
-`git push`
+```
+git add -A
+git commit -m "message describing the change you made here"
+git push
+```
 Congratulations!  Your update is on github!
 
 ![Exmaple Terminal Output](http://i.imgur.com/CYClTN3.png)
@@ -29,9 +35,11 @@ Congratulations!  Your update is on github!
 ####If you find yourself in times of trouble
 If you need to revert a specific file to the version that is currently on github (abandoning "local" changes) you can use `git checkout file.foo`
 Examples:
-`git checkout styles.css`
-`git checkout index.html`
-`git checkout scripts.js`
+```
+git checkout styles.css
+git checkout index.html
+git checkout scripts.js
+```
 
 If you have gotten yourself totally lost and just want to revert EVERYTHING back to the gtihub version you can use `git reset --hard`
 
