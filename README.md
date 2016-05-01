@@ -54,3 +54,6 @@ If you have gotten yourself totally lost and just want to revert EVERYTHING back
 ####When something goes wrong (and it will) do not panic!
 Git is complicated and can be frustrating at times, but it is a great tool and is the best way to collaborate on code.  The most common mistake is not doing a `git pull` before you begin working.  In a 2 person project like this one you can all but eliminate merging issues by making sure that your code is up to date before you begin working.
 
+
+hey andrew??!?!
+
