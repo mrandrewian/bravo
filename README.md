@@ -13,6 +13,12 @@ There are a few steps involved with wetting up github access on your machine.  F
 
 
 ## Git basics
+So you want to start working on an existing repository!  The first thing you need to do is clone it to your local machine.  To clone this repo open up your terminal application and type
+```
+git clone https://github.com/mrandrewian/bravo.git
+```
+Congratulations! You now have a local copy of the repository and can begin working.
+
 Before you start working (this part is important!)
 ```
 git pull
