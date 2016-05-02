@@ -1,10 +1,11 @@
 import requests
+import .env
 
 # api request
 
 # parameters
 segId='673849'
-apiToken='f6dc55288ccd2ca77c2e4f54a1009aec09c37eb9'
+apiToken=env.apiToken
 startDate='2015-01-01T00:00:00Z'
 endDate='2016-01-01T00:00:00Z'
 strava='https://www.strava.com/api/v3/'
