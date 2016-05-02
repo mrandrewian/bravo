@@ -1,5 +1,6 @@
 import requests
 import secrets
+import pandas as pd
 
 # api request
 
@@ -30,4 +31,8 @@ for i in range(len(jsonifiedData)):
 	effort.append(jsonifiedData[i]['elapsed_time'])
 	allData.append(effort)
 
-print(allData)
+x=pd.Series(allData)
+
+print(x)
+
+x.to_csv('foo.csv')
