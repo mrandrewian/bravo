@@ -5,7 +5,7 @@ import .env
 
 # parameters
 segId='673849'
-apiToken=env.apiToken
+apiToken=.env.apiToken
 startDate='2015-01-01T00:00:00Z'
 endDate='2016-01-01T00:00:00Z'
 strava='https://www.strava.com/api/v3/'
