@@ -10,7 +10,7 @@ apiToken=secrets.apiToken
 startDate='2015-01-01T00:00:00Z'
 endDate='2016-01-01T00:00:00Z'
 strava='https://www.strava.com/api/v3/'
-perPage='5'
+perPage='200'
 page='1'
 
 # build url
@@ -23,16 +23,22 @@ a=requests.get(url)
 jsonifiedData=a.json()
 
 
-# pull out data i want using for loop
+# pull out data i want using for loop. use if statement to find fastest times
 allData=[]
+fastestTime=jsonifiedData[0]['elapsed_time']
 for i in range(len(jsonifiedData)):
 	effort=[]
-	effort.append(jsonifiedData[i]['average_watts'])
-	effort.append(jsonifiedData[i]['elapsed_time'])
+	if jsonifiedData[i]['elapsed_time']< fastestTime:
+		effort.append(jsonifiedData[i]['start_date_local'])
+		effort.append(jsonifiedData[i]['elapsed_time'])
+		fastestTime=jsonifiedData[i]['elapsed_time']
 	allData.append(effort)
 
+
+# reformat arrays
 x=pd.Series(allData)
 
 print(x)
 
-x.to_csv('foo.csv')
+# print to csv for analysis in r. probably some way to just talk to R from python, but i dont know
+#x.to_csv('foo.csv')
